@@ -7,6 +7,6 @@ module.exports = ({ env }) => ({
   webhooks: {
     populateRelations: env.bool("WEBHOOKS_POPULATE_RELATIONS", false),
   },
-  url: env("PUBLIC_URL", "https://admin.slubinaczej.pl"),
+  url: env("URL"),
   proxy: true,
 });
